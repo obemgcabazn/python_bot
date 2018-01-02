@@ -21,8 +21,7 @@ import time
 def screenGrab():
     box = (x_pad+1,y_pad+1, x_pad+641, y_pad+481)
     im = ImageGrab.grab(box)
-    im.save(os.getcwd() + '\\full_snap__' + str(int(time.time())) +
-'.png', 'PNG')
+    im.save(os.getcwd() + '\\full_snap__' + str(int(time.time())) + '.png', 'PNG')
 
 def main():
     screenGrab()
